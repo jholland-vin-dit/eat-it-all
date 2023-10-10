@@ -1,6 +1,7 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite2, otherSprite2) {
     info.changeLifeBy(-1)
     my_enemy.setPosition(randint(10, 142), randint(10, 102))
+    my_enemy.setVelocity(randint(10, 20), randint(10, 20))
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
